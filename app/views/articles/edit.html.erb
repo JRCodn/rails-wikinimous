@@ -1,0 +1,9 @@
+<ul>
+<%= form_for(@article) do |f| %>
+  <li><%= f.label :title %>
+  <%= f.text_field :title %></li>
+  <li><%= f.label :content %>
+  <%= f.text_field :content %></li>
+  <%= f.submit "Update", :class => 'form-submit' %>
+<% end %>
+</ul>
